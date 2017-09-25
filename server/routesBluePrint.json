@@ -1,0 +1,40 @@
+//Blue print of routes to access resources following REST, using HTTP verbs in json format
+//Resource is lion
+{
+  'name': 'Simba',
+  'id': 1,
+  'gender': 'male',
+  'pride': 'pretty cats'
+}
+//bluePrint
+{
+  'GET /lions': {
+    'desc': 'returns all lions',
+    'response': '200 application/json',
+    'data': [{}, {}, {}]
+  },
+
+  'GET /lions/:id': {
+    'desc': 'returns the lion of represented id',
+    'response': '200 application/json',
+    'data': {}
+  },
+
+  'POST /lions': {
+    'desc': 'creates a new lion and return the new one posted',
+    'response': '201 application/json',
+    'data': {}
+  },
+
+  'PUT /lion/:id': {
+    'desc': 'updates the lion at represented id and return the updated lion',
+    'response': '200 application/json',
+    'data': {}
+  },
+
+  'DELETE /lion/:id':{
+    'desc': 'delete the lion of represented id and return the matching one',
+    'response': '200 application/json',
+    'data': {}
+  }
+}
